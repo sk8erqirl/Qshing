@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>BackDoor Qshing Campaign</title>
+
+  <style>
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffbea;
+      color: #222;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 480px; 
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* 경고 박스 */
+    .warning-box {
+      border: 3px solid #ff4d4f;
+      background-coslor: #fff3f3;
+      border-radius: 15px;    
+      padding: 10px 15px 25px 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: #ff0000;
+      font-size: 2em;
+      margin-bottom: 12px;
+      animation: blink 1s ease-in-out 5;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    h3, h4 {
+      margin: 10px 0;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background-color: #ffcc66;
+      margin: 25px 0;
+    }
+
+    /* 큐싱 정의 박스 */
+    .qshing-def {
+      background-color: #fff3e0;
+      border-left: 5px solid #ff9800;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .qshing-def:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .qshing-def h3 {
+      color: #558b2f;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .qshing-def p {
+      font-size: 1.05em;
+      line-height: 1.8;
+      text-align: left;
+      color: #333;
+    }
+
+    .prevention-box {
+      background-color: #e8f5e9;
+      border-left: 5px solid #4caf50;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    .prevention-box h4 {
+      color: #2e7d32;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .prevention-box p {
+      font-size: 0.95em;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .damage-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    .damage-card {
+      background-color: #ffebee;
+      border-left: 5px solid #ef5350;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .damage-card h4 {
+      color: #c62828;
+      font-size: 1.3em;
+      margin: 10px 0;
+    }
+
+
+
+    /* 링크 */
+    a {
+      color: #0055cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .survey-btn {
+      display: inline-block;
+      background-color: #ffd966;
+      color: #222;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: 0.2s;
+    }
+    .survey-btn:hover {
+      background-color: #ffea94;
+    }
+
+    p {
+      text-align: left;
+      margin: 10px 0;
+      font-size: 0.95em;
+    }
+
+    .gift-text {
+      text-align: center;
+      color: #ff6600; 
+      font-weight: bold;
+    }
+
+
+    @media (max-width: 380px) {
+      h1 { font-size: 1.8em; }
+      .survey-btn { font-size: 1em; padding: 10px 20px; }
+      p { font-size: 0.9em; }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="warning-box">
+      <h1>⚠️ WARNING ⚠️</h1>
+      <h3>방금 악성<small><del>일 뻔한</del></small> QR코드를 찍으셨습니다.</h3>
+      <h4>해킹 당하실 뻔... 했습니다.</h4>
+    </section>
+
+    <section class="qshing-def">
+      <h3>💡큐싱(Qshing)이란?</h3>
+      <p><strong>QR코드 + 피싱(Phishing)</strong>의 합성어로 QR코드를 악용한 신종 해킹 수법을 의미한다.<br>
+      해커가 만든 악성 QR코드를 찍으면 악성 앱이 설치되거나 설치하게 만드는 방식이다. <strong>신종 해킹 수법</strong>이다.</p>
+    </section>
+
+    <section>
+      <div class="damage-cards">
+        <div class="damage-card">
+          <h4>💥이런 피해를 입을 수 있어요</h4>
+        <p>• 개인 및 금융정보 탈취<br>
+        • 모바일 기기 원격 조종<br>
+        • 소액 결제 유도</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+      <div class="prevention-box">
+        <h4>🛡️ 이렇게 예방하세요!</h4>
+        <p>• 신뢰할 수 없는 QR코드 스캔 자제하기<br>
+        • 백신 프로그램으로 악성 앱 설치 여부 점검하기<br>
+        • KISA PC 원격점검 서비스 이용하기</p>
+      </div>
+
+    <section>
+      <div class="prevention-box" style="background-color: #e0f7fa; border-left-color: #00acc1;">
+        <h4>🚨 피해를 입었다면?</h4>
+        <p>• 경찰청(112): 금융 피해 신고<br>
+        • 금융감독원(1332): 피해 상담 및 환급 절차<br>
+        • 이동통신사, A/S센터: 휴대폰 점검</p>
+      </div>
+    </section>
+
+    <section>
+      <br>
+      <h3>✅ 실제 사례</h3>
+      <ul style="list-style-type:none; padding:0;">
+        <li><a href="https://link24.kr/BpFtElm" target="_blank">📎 인증문자 안왔는데 결제… 자전거 빌리다 개인정보 탈탈</a></li>
+        <li><a href="https://link24.kr/8ph0Yuz" target="_blank">📎 마이크로소프트 사칭 QR코드 스캔 땐 해킹… ‘큐싱’ 주의보</a></li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3> <a href="https://form.naver.com/" target="_blank" class="survey-btn">설문조사 참여하기</a></h3>
+      <p class="gift-text">★추첨을 통해 기프티콘을 드립니다★</p>
+    </section>
+    <br>
+  </div>
+</body>
+</head>
+
+</html>
